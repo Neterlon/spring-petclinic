@@ -30,6 +30,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  */
 @SpringBootApplication
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class PetClinicApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
