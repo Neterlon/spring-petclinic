@@ -29,7 +29,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  *
  */
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
 public class PetClinicApplication extends SpringBootServletInitializer {
 
